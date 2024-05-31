@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">kotlin_exam_final</string>
+    <string name="delete_calculo_titulo">Seguro desea eliminar el calculo?</string>
+</resources>

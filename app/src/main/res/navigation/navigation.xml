@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/insertCalculoFragment">
+    <fragment
+        android:id="@+id/insertCalculoFragment"
+        android:name="com.rsierra.kotlin_exam_final.view.InsertCalculoFragment"
+        android:label="fragment_insert_calculo"
+        tools:layout="@layout/fragment_insert_calculo" >
+        <action
+            android:id="@+id/action_insertCalculoFragment_to_selectCalculoFragment2"
+            app:destination="@id/selectCalculoFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectCalculoFragment2"
+        android:name="com.rsierra.kotlin_exam_final.view.SelectCalculoFragment"
+        android:label="SelectCalculoFragment" >
+        <action
+            android:id="@+id/action_selectCalculoFragment2_to_insertCalculoFragment"
+            app:destination="@id/insertCalculoFragment" />
+    </fragment>
+</navigation>
