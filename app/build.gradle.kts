@@ -52,6 +52,7 @@ dependencies {
     // room
     implementation(libs.room)
     implementation(libs.room.runtime)
+    implementation(libs.androidx.databinding.runtime)
     kapt(libs.room.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

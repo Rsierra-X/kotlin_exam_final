@@ -18,8 +18,9 @@ class CalculoAdapter(val list: ArrayList<Calculo>, val calculoListener: CalculoC
     override fun getItemCount(): Int = list.size
 
     override fun onBindViewHolder(holder: CalculoViewHolder, position: Int) {
-        holder.binding.nombre.text = list.get(position).operator_1.toString()
-        holder.binding.raza.text = list.get(position).operator_2.toString()
+        holder.binding.opt1.text = list.get(position).operator_1.toString()
+        holder.binding.opt2.text = list.get(position).operator_2.toString()
+        holder.binding.operator.text = list.get(position).operator.toString()
         holder.binding.root.setOnClickListener {
             calculoListener.onClick(list.get(position))
         }
